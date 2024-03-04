@@ -1,0 +1,62 @@
+<style>
+  .floating-left {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    z-index: 999999999999;
+  }
+  .floating-right {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 999999999999;
+  }
+  .floating-left .see_float_btn,
+  .floating-right .see_float_btn {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--see_light_color);
+    margin: 5px 0;
+  }
+  .see_float_btn.small {
+    height: 40px;
+    width: 40px;
+  }
+  .see_float_btn.large {
+    height: 80px;
+    width: 80px;
+    font-size: 40px;
+  }
+  .see_float_btn.medium {
+    height: 60px;
+    width: 60px;
+    font-size: 32px;
+  }
+  .see_float_btn .comm-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+<div class="floating-left">
+  <a href="tel:+91-9389368291" target="_self">
+    <div class="see_float_btn medium" style="background: #2dd749">
+      <div class="comm-btn">
+        <i class="fa fa-phone"></i>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="floating-right">
+  <a href="https://wa.me/919389368291" target="_self">
+    <div class="see_float_btn medium" style="background: #2dd749">
+      <div class="comm-btn">
+        <i class="fab fa-whatsapp"></i>
+      </div>
+    </div>
+  </a>
+</div>
